@@ -1,0 +1,182 @@
+<DOCTYPE html>
+<html>
+<head>
+<style>
+	*{
+	padding:0;
+	margin:0;
+	}
+	body{
+	width:100%;
+	background-color:#222;
+	color:white;
+	font-family:system-ui;
+	
+	
+	}
+	.cont{
+	margin:auto;
+	text-align:center;
+	padding-top:50%;
+	
+	}
+	.sinin input{
+	padding:8px;
+	margin:8px;
+	border-radius:10px;
+	border-color:#222;
+	background-color:#111;
+	color:white;
+	
+	}
+	.sinin button{
+	padding:10px;
+	border-radius:10px;
+	}
+	
+	.sin{
+	background-color:blue;
+	color:white;
+	border-color:blue;
+	}
+	
+	.log{
+	margin:auto;
+	text-align:center;
+	
+	}
+	
+	.log input{
+	padding:8px;
+	margin:8px;
+	border-radius:10px;
+	border-color:#222;
+	background-color:#111;
+	color:white;
+	}
+	.log button{
+	padding:8px;
+	margin:8px;
+	border-radius:10px;
+	}
+	.hd{
+	text-transform:uppercase;
+	}
+	.box{
+	width:50px;
+	text-align:center;
+	
+	}
+	.box button {
+	margin-top:8px;
+	background-colo:white;
+	padding:8px;
+	width:40px;
+	border-radius:4px;
+	
+	}
+	.big{
+	position:absolute;
+	background-color:white;
+	width:80%;
+	height:100%;
+	color:black;
+	}
+	.item{
+	margin:aotu;
+	text-align:center;
+	
+	}
+	.item label{
+	margin:aotu;
+	text-align:center;
+	padding:10px;
+	margin:100px;
+	}
+</style>
+</head>
+<body>
+	<div class="box">
+	<button id="one">...</button>
+	<button id="tow">...</button>
+	</div>
+	<div class="big">
+		<div class="item">
+			<label>Home</label>
+			<br>
+			<label>Game</label>
+			<br>
+			<label>Setimg</label>
+			<br>
+			<label>Store</label>
+		</div>
+	</div>
+	<div class="cont">
+		<div class="sinin">
+			<header class="hd"> wellcome to monster game web</header>
+			<br>
+			name
+			<br>
+			<input typye="text" placeholder="name" />
+			<br>
+			password
+			<br>
+			<input type="password" placeholder="password"/>
+			<br>
+			<button class="sin">sin</button>
+			<button class="add">add</button>
+		</div>
+		<div class="log">
+			name
+			<br>
+			<input typye="text" placeholder="name" />
+			<br>
+			password
+			<br>
+			<input type="password" placeholder="password"/>
+			<br>
+			<button class="addd">add new </button>
+		</div>
+	</div>
+		
+	<script type="text/javascript">
+		let sinin = document.querySelector('.sinin');
+		let log = document.querySelector('.log');
+		let add = document.querySelector('.add');
+		
+		let one = document.querySelector('#one');
+		let tow = document.querySelector('#tow');
+		let big = document.querySelector('.big');
+		
+		log.style.display='none';
+		tow.style.display='none';
+		big.style.display='none';
+		
+		add.onclick=function ADD()
+		{
+		
+			log.style.display='block';
+			sinin.style.display='none';
+		
+		}
+		
+		one.onclick=function Show()
+		{
+		
+		tow.style.display='block';
+		one.style.display='none';
+		big.style.display='block';
+		
+		}
+		
+		tow.onclick=function hide()
+		{
+		
+		one.style.display='block';
+		tow.style.display='none';
+		big.style.display='none';
+		}
+	</script>
+	
+</body>
+</html>
